@@ -1,0 +1,54 @@
+@mixin animation{
+  animation-name: zoom;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+  animation-direction: alternate;
+
+}
+@keyframes zoom {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+  
+  .imgs-index {@include animation
+  }
+  
+  .galeria-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .gallery-item {
+    object-fit: unset;
+    width: 33%;
+    height: 33%;
+  }
+  .imgs-act{
+@include animation; 
+  }
+ .imgs-asoc{@include animation
+}
+ 
+  .historia-imgs:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.8);
+    width: 25%; 
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 20%;   
+  }
+     
+    
+    
+    .historia-img3{
+      
+    width: 400px;
+    height: 400px;
+    }
